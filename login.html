@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/stylelogin.css">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Welcome to NEMMY</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="containerr">
+                <div class="shape half-circle">
+                    <div class="eyes">
+                        <div class="eye"><div class="pupil"></div></div>
+                        <div class="eye"><div class="pupil"></div></div>
+                    </div>
+                    <div class="mouth a"></div>
+                </div>
+        
+                <div class="shape rectangle">
+                    <div class="eyes">
+                        <div class="eye"><div class="pupil"></div></div>
+                        <div class="eye"><div class="pupil"></div></div>
+                    </div>
+                    <div class="mouth rec"></div>
+                </div>
+        
+                <div class="shape tall-rectangle">
+                    <div class="eyes">
+                        <div class="eye"><div class="pupil"></div></div>
+                        <div class="eye"><div class="pupil"></div></div>
+                    </div>
+                    <div class="mouth tal"></div>
+                </div>
+        
+                <div class="shape round-rectangle">
+                    <div class="eyes">
+                        <div class="eye"><div class="pupil"></div></div>
+                        <div class="eye"><div class="pupil"></div></div>
+                    </div>
+                    <div class="mouth rou"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="right-section">
+        <div class="inner">
+            <h3>ابدا رحلتك في التعلم والاستكشاف</h3>
+            <div class="button-container">
+                <div><button class="btn login" id="login-btn">تسجيل دخول</button>
+                    <button class="btn register" id="register-btn">انشاء حساب</button></div>
+            </div>
+            <div class="form-container" id="form-container">
+                <form id="register-form" class="form" onsubmit="return validatePassword(1,event)">
+                    <div><label for="student-id">ايميل الوالد</label>
+                        <input type="email" id="student-id" name="student-id" required></div>
+                    
+                    <div><label for="year">الصف</label>
+                        <select id="year" name="year">
+                            <option value="first">الاول الاعدادي</option>
+                            <option value="second">الثاني الاعدادي </option>
+                            <option value="third">الثالث الاعدادي </option>
+                        </select></div>
+                    
+                    <div><label for="username">اسم المستخدم </label>
+                        <input type="text" id="username" name="username" required></div>
+                    
+                        <div class="password-container">
+                            <label for="password1">كلمة المرور</label>
+                            <input  class="psswrd" id="password1" name="password" type="text"required>
+                            <i class="op fa-regular fa-eye eye-icon" ></i>
+                            <i class="cl fa-regular fa-eye-slash eye-icon " ></i>
+                            <span id="passwordError" class="error"></span>
+
+                        </div>
+                    
+                    <button  class="btn log" >انشئ الحساب</button>
+
+                </form>
+                
+                <form id="login-form" class="form"  >
+                   <div> <label for="login-email">ايميل الوالد</label>
+                    <input type="email" id="login-email" name="login-email" required></div>
+                    
+                    <div class="password-container">
+                        <label for="password2">كلمة المرور</label>
+                        <input  class="psswrd" id="password2" name="password" type="text" required>
+                        <i class="op fa-regular fa-eye eye-icon " ></i>
+                        <i class="cl fa-regular fa-eye-slash eye-icon" ></i>
+                    </div>
+                    
+                    <div class="remember-me">
+                        <span class="forget-me">نسيت كلمة السر؟</span>
+                        <div><input type="checkbox" id="remember-me">
+                            <span for="remember-me">تذكرني</span></div>
+                       
+                    </div>
+                    <button  class="btn log">سجل دخول</button>
+
+                    
+                </form>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <script src="./js/mainlogin.js"></script>
+</body>
+</html>

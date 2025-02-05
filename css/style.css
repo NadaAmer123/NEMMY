@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(7, 7, 7);
+}
+
+html,
+body {
+    overflow-x: hidden;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+  
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+   
+    margin: 0px 10px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #003549;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #003549;
+    color: white;
+}
+
+/* The Section Body... Set it to max size of screen */
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* To blend section color with water color */
+main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #085a7a, transparent);
+    z-index: 10;
+}
+
+/* Make all images absolute and cover whole screen */
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Properites for th text on top section  */
+section #text span {
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgb(3, 3, 3);
+}
+
+section #text {
+    position: absolute;
+    color: #5fbedb;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+/* The explore Button */
+#explore {
+    text-decoration: none;
+    /* To prevent Underline */
+    padding: 8px 25px;
+    background: white;
+    color: #5fbedb;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+    /* To move it 100px below from center */
+}
+
+#explore:hover {
+    background:#5fbedb;;
+    color: white;
+}
+
+/* Propeties of Top button */
+#top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:#5fbedb;
+    bottom: 10%;
+    right: 5%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+/* Glass Effect */
+/* .glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+} */
+
+ul{
+    list-style: none;
+}
+.sec {
+    
+    position: relative;
+    padding: 20px;
+    background: #ffffff;
+    padding-bottom: 15%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.sec{
+    text-align: right;
+}
+    
+    svg {
+        width: 100%;
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+        transform-box: fill-box;
+    
+   
+    }
+    svg:hover{
+        transform: scale(1.2);
+    }
+    path {
+        fill: none;
+        stroke: rgb(9, 157, 216);
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+       
+    }
+    .line{
+        z-index: 5;
+    }
+    #circleAnimation{
+        width: 100%;
+
+    }
+    .dashed-circle {
+        fill: none;
+        stroke: rgb(9, 157, 216);
+        stroke-width: 1;
+        stroke-dasharray: 5, 5;
+        transform-origin: center;
+        background-color: #085a7a;
+        width: 100%;
+       
+    }
+    
+    .moving-circle {
+        fill: red;
+        
+    }
+     h2{
+        text-align: right;
+     }
+    
+    .svgshap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+   /* From Uiverse.io by bociKond */ 
+.spinner {
+    width: 70.4px;
+    height: 70.4px;
+    --clr: rgb(33, 235, 225);
+    --clr-alpha: rgb(247, 197, 159,.1);
+    animation: spinner 1.6s infinite ease;
+    transform-style: preserve-3d;
+  }
+  
+  .spinner > div {
+    background-color: var(--clr-alpha);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 3.5px solid var(--clr);
+  }
+  
+  .spinner div:nth-of-type(1) {
+    transform: translateZ(-35.2px) rotateY(180deg);
+  }
+  
+  .spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+  }
+  
+  .spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+  }
+  
+  .spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+  }
+  
+  .spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+  }
+  
+  .spinner div:nth-of-type(6) {
+    transform: translateZ(35.2px);
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+  
+    50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+  
+    100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+  }
+    .about-us{
+      width: 90%;
+    
+    }
+    /* last */
+    .card {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        ;
+      }
+      
+      .bg {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 100%;
+        height: 290px;
+        z-index: 2;
+        background: rgba(255, 255, 255, .95);
+        backdrop-filter: blur(24px);
+        border-radius: 10px;
+        overflow: hidden;
+        outline: 2px solid white;
+        padding-right: 20px;
+      }
+      
+      .blob {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background-color:  #5fbedb;
+        opacity: 1;
+        filter: blur(12px);
+        animation: blob-bounce 5s infinite ease;
+      }
+      
+      @keyframes blob-bounce {
+        0% {
+          transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+      
+        25% {
+          transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+        }
+      
+        50% {
+          transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+        }
+      
+        75% {
+          transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+        }
+      
+        100% {
+          transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+      }
+     
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  :root {
+    --primary-color:rgb(146, 214, 214); 
+  }
+  /* external */
+  .containerrr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+  }
+  
+  .shape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+    
+  }
+  
+  .circle {
+    background-color:#ffd700;
+    border-radius: 50%;
+    top: 0%;
+    left: 40%;
+  }
+  
+  .square {
+    background-color: rgb(242, 70, 73);
+    top: 55%;
+    left: 60%;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #3357ff;
+    top: 45%;
+    left: 20%;
+  }
+  /* end external */
+  section{
+    height: 90%;
+  }
+  .container {
+    padding: 40px 87px;
+    height: 90%;
+  }
+  /* Navbar styling */
+  nav{
+    height: 10%;
+  }
+  nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav .logo {
+  
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a ,nav ul li span {
+   color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li.user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li.user-info .user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .user-info div{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    
+  }
+  
+  /* Grid layout for blocks */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 30px;
+    padding-top: 0;
+    margin-top: 20px;
+    height: 100%;
+    direction: rtl;
+    
+  }
+  
+  .block {
+    /* background-color: #f0f0f0; */
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 70%;
+  }
+  .block img{
+    height: 80%;
+    width: 50%;
+  }
+  /* Hover effect on blocks */
+  .block:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }

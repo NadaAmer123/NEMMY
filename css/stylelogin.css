@@ -1,0 +1,418 @@
+:root {
+    --primary-color:tomato; 
+}
+* {
+    font-family: "El Messiri", serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: "Rubik", sans-serif; */
+  }
+  .mochiy-pop-one-regular {
+    font-family: "El Messiri", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.right-section {
+    flex: 1;
+    height:80%;
+    background-color: white;
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-section .inner{
+    padding: 20px;
+    /* background-color: #fff; */
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+}
+
+.button-container { 
+    background-color: var(--primary-color);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.button-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+.log{
+    position: relative;
+    left:75%;
+}
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color:var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.register, .login {
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: rgb(195, 76, 55);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    
+}
+.form div{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+label {
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    width: 30%;
+}
+
+input, select {
+    width: 100%;
+    align-self: center;
+    padding: 8px;
+    border-radius: 30px;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.remember-me {
+    align-items: center;
+}
+
+.remember-me span {
+    font-size: 14px;
+}
+
+#register-form {
+    display: block;
+}
+
+#login-form {
+    display: none;
+}
+
+.forget-me{
+    cursor: pointer;
+}
+/* .logphoto{
+    display: none;
+} */
+
+/* shapes */
+/* Animation for movement from left */
+@keyframes moveFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for movement from top */
+@keyframes moveFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation for movement from bottom */
+@keyframes moveFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Container for the shapes */
+.containerr {
+    position: absolute;
+    display: flex;
+    /* gap: 20px; */
+    align-items: flex-end; /* Aligns all shapes on the same base */
+    z-index: 100;
+}
+
+/* Common styling for shapes */
+.shape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcc00;
+    
+}
+
+/* First shape enters from the left */
+.rectangle {
+    width: 112px;
+    height: 264px;
+    background-color: rgb(25, 182, 255);
+    border-radius: 10px;
+    animation: moveFromTop 1s ease-out forwards;
+}
+
+/* Second shape enters from the top */
+.tall-rectangle {
+    width: 92px;
+    height: 189px;
+    background-color: rgb(242, 70, 73);
+    border-radius: 5px;
+    right: 10%;
+    animation: moveFromBottom 1s ease-out forwards;
+}
+
+/* Third shape enters from the bottom */
+.half-circle {
+    width: 163px;
+    height: 90px;
+    background-color: rgb(58, 176, 133);
+    border-radius: 150px 150px 0 0;
+    left: 10%;
+    z-index: 1;
+    animation: moveFromLeft 1s ease-out forwards;
+}
+
+/* Fourth shape enters from the bottom with delay */
+.round-rectangle {
+    width: 100px;
+    height: 120px;
+    background-color: #ffd700;
+    border-radius: 50px 50px 0 0;
+    right: 17%;
+    animation: moveFromTop 1.5s ease-out forwards;
+    /* animation-delay: 0.3s; Delay the entry of this shape */
+}
+
+
+.eyes {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    top: 16px;
+}
+
+.eye {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pupil {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.1s;
+}
+
+.mouth {
+    position: absolute; 
+}
+
+.a {
+    bottom: 20px;
+    width: 42px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 0 0 65px 65px;
+    border-top: none;
+}
+.rou{
+    width: 10px;
+    height: 10px;
+    /* border: 3px solid black; */
+    background-color: rgb(4, 3, 3);
+    border-radius: 50%;
+    border-top: none;
+}
+.tal{
+    width: 20px;
+            height: 10px;
+            background-color:black; /* اللون */
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            top: 47px;
+}
+.rec {
+    top: 70px;
+    width: 53px;
+    height: 19px;
+    background-color: black;
+    clip-path: ellipse(21% 31% at 48% 0%);
+}
+/* password */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.eye-icon {
+    position: absolute;
+    left: 10px;
+   bottom: 40%;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--primary-color);
+    
+}
+.cl{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right-section {
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-section {
+        display: none; /* إخفاء الأشكال على الشاشات الصغيرة */
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .btn {
+        /* width: 100%; */
+        text-align: center;
+    }
+}
+#passwordError {
+    display: none; 
+    color: red; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+  
+}
+
+
+input.error-border {
+    border-color: red;
+}
