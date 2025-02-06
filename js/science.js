@@ -19,10 +19,13 @@ function loadLesson(unitId, lessonId) {
 
   // البحث عن الدرس داخل الوحدة
   const lesson = unit.lessons.find((l) => l.id === lessonId);
-  const container = document.getElementById("lessonContainer");
+  const container = document.getElementById("lessonsec");
 
   // إضافة المحتوى داخل الحاوية
   container.innerHTML = `
+  <div class="contain" >
+        <div class="inner" id="lessonContainer" style="width: 70%;">
+          
     <div class="vid">
       <iframe
         style="width: 100%; aspect-ratio: 16/9; padding-bottom: 20px"
@@ -36,12 +39,27 @@ function loadLesson(unitId, lessonId) {
         <span>${unitsData[subject].title} - ${unit.name} - ${lesson.name}</span>
         <div class="bcon" style="display: flex; flex-direction: column;">
         <button type="submit" class="btn b" onclick="openPDF('${lesson.pdf}')">عرض الملف</button>
-          <a href="javascript:void(0)" onclick="toggleSectionBack()">
-            <button type="submit" class="btn b">انهي الدرس</button>
-          </a>
+          
         </div>
       </div>
     </div>
+     </div>
+        <div class="left">
+          <div class="in">
+            <span>هل انتهيت من الدرس؟</span>
+            <span>تاكد من فهمك عن طريق اجراء الاختبار الاتي</span>
+            <div class="b2">
+              <a href="./exam.html"
+                ><button type="submit" class="btn">ابدا الاختبار</button></a
+              >
+            </div>
+          </div>
+          <a href="javascript:void(0)" onclick="toggleSectionBack()">
+            <button type="submit" class="btn " style="background-color:rgb(169, 4, 4); margin-top:10px;">انهي الدرس</button>
+          </a>
+        </div>
+      </div>
+      
   `;
 }
 

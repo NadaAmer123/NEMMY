@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>أسئلة امتحان</title>
     <link rel="stylesheet" href="./css/exam.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css" />
 
 </head>
 <body>
+    <div class="iframe-container">
+        <div class="containerq">
+            <h2>أسئلة امتحان على الدرس الأول</h2>
     
-
-       
-      <div class="iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAzJgHcjROc_1WLsK3SnDz92qWJNmrAbRRkImxetosb6nepg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل…</iframe>
+            <div class="question">
+                <p>ما هي خصائص المادة الصلبة؟</p>
+                <label><input type="radio" name="q1" value="correct"> المادة الصلبة لها شكل وحجم ثابتين.</label><br>
+                <label><input type="radio" name="q1" value="incorrect"> المادة الصلبة تأخذ شكل الوعاء ولكن حجمها ثابت.</label><br>
+                <label><input type="radio" name="q1" value="incorrect"> المادة الصلبة قابلة للتشكل بسهولة.</label><br>
+                <label><input type="radio" name="q1" value="incorrect"> المادة الصلبة ليس لها حجم ثابت.</label>
+            </div>
+    <hr>
+            <div class="question">
+                <p>ما هو القانون الأول للديناميكا الحرارية؟</p>
+                <label><input type="radio" name="q2" value="correct"> الطاقة لا تفنى ولا تستحدث من عدم.</label><br>
+                <label><input type="radio" name="q2" value="incorrect"> الطاقة يمكن أن تفنى.</label><br>
+                <label><input type="radio" name="q2" value="incorrect"> الطاقة يمكن تحويلها فقط إلى طاقة حركية.</label><br>
+                <label><input type="radio" name="q2" value="incorrect"> الطاقة لا تنتقل بين الأجسام.</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>ما هو التأثير الجزيئي في المواد؟</p>
+                <label><input type="radio" name="q3" value="correct"> التأثير الجزيئي يتضمن القوى التي تؤثر على حركة الجزيئات.</label><br>
+                <label><input type="radio" name="q3" value="incorrect"> التأثير الجزيئي يتعلق فقط بحركة الأجسام الكبيرة.</label><br>
+                <label><input type="radio" name="q3" value="incorrect"> التأثير الجزيئي ليس له علاقة بحركة الجزيئات.</label><br>
+                <label><input type="radio" name="q3" value="incorrect"> التأثير الجزيئي يحدث فقط في الحالات السائلة.</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>كيف يمكن للحرارة أن تنتقل؟</p>
+                <label><input type="radio" name="q4" value="correct"> عبر التوصيل، الحمل، والإشعاع.</label><br>
+                <label><input type="radio" name="q4" value="incorrect"> فقط عبر التوصيل.</label><br>
+                <label><input type="radio" name="q4" value="incorrect"> فقط عبر الحمل.</label><br>
+                <label><input type="radio" name="q4" value="incorrect"> فقط عبر الإشعاع.</label>
+            </div>
+            <hr>
+            <div class="question">
+                <p>ما هو مبدأ الديناميكا الحرارية الثاني؟</p>
+                <label><input type="radio" name="q5" value="correct"> الطاقة تنتقل من الجسم الأعلى حرارة إلى الجسم الأقل حرارة.</label><br>
+                <label><input type="radio" name="q5" value="incorrect"> الطاقة تنتقل من الجسم الأقل حرارة إلى الجسم الأعلى حرارة.</label><br>
+                <label><input type="radio" name="q5" value="incorrect"> لا يحدث أي انتقال للطاقة بين الأجسام.</label><br>
+                <label><input type="radio" name="q5" value="incorrect"> الطاقة يمكن أن تتحول من شكل إلى آخر.</label>
+            </div>
+            <hr>
+            <button id="submitBtn" onclick="calculateScore()">إظهار النتيجة</button>
+    
+            <div id="result"></div>
+        </div>
     </div>
- 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./js/exam.js"></script>
-    </body>
-
+   <script src="./js/exam.js"></script>
+    
+</body>
 </html>

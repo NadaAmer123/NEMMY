@@ -1,13 +1,16 @@
+*{
+    font-family: "El Messiri", serif;
+}
 body {
     margin: 0px;
     padding: 0px;
+   
 }
 
 
 .iframe-container{
     background-position: center;
     background-size: cover;
-    height: 100vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -19,8 +22,53 @@ body {
         linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
 }
-iframe {
-    width: 60%; /* عرض 60% من عرض الصفحة */
-    height: 80%; /* عرض الارتفاع بشكل مناسب */
+
+
+.containerq {
+    background-color: #fff;
+    margin: 30px 20px 20px 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.303);
+    width: 60%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: tomato
+}
+.iframe-container p{
+    color: rgba(225, 84, 59, 0.868);
+    font-size: 25px;
+}
+.iframe-container label{
+    font-size: 21px;
+}
+.question {
+    margin-bottom: 20px;
+    text-align: right;
+}
+#result{
+    font-size: 20px;
+}
+button {
+    background-color:tomato;
+    color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color:rgba(255, 99, 71, 0.566);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
