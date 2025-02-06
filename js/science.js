@@ -1,4 +1,33 @@
+// // الحصول على زر القائمة والقائمة
+// const menuToggle = document.querySelector(".menu-toggle");
+// const menu = document.querySelector("nav ul");
+
+// // إضافة حدث النقر على زر القائمة
+// menuToggle.addEventListener("click", () => {
+//   // التبديل بين إظهار وإخفاء القائمة
+//   menu.classList.toggle("show");
+// });
+
+function openPDF() {
+  window.open("./Nemmy Platform.pdf", "_blank");
+}
+
+
+
 // قراءة البارامتر من الـ URL
+function toggleSection() {
+
+  var coursesSection = document.getElementById('Courses');
+  var lessonsecSection = document.getElementById('lessonsec');
+  
+  // إخفاء قسم الدورات
+  coursesSection.style.display = 'none';
+  
+  // إظهار قسم الدروس
+  lessonsecSection.style.display = 'block';
+}
+
+
 function getSubjectFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("subject"); // ترجع اسم المادة
@@ -31,7 +60,7 @@ function getSubjectFromURL() {
                   ${unit.lessons
                     .map(
                       (lesson) =>
-                        `<div class="accordion-body"><a href="#">${lesson.name}</a></div>`
+                        `<div class="accordion-body"><a href="javascript:void(0)" onclick="toggleSection()">${lesson.name}</a></div>`
                     )
                     .join("")}
               </div>
