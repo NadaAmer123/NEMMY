@@ -1,62 +1,258 @@
 const unitsData = {
-    sci: {
-      title: 'علوم',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الرابعة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    },
-    math: {
-      title: 'رياضيات',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع'] }
-      ]
-    },
-    english: {
-      title: 'اللغة الإنجليزية',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الرابعة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    },
-    arabic: {
-      title: 'اللغة العربية',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الرابعة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    },
-    social: {
-      title: 'الدراسات الاجتماعية',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    },
-    computer: {
-      title: 'حاسب الي',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الرابعة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    },
-    religion: {
-      title: 'التربية الدينية',
-      units: [
-        { name: 'الوحدة الاولى', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع'] },
-        { name: 'الوحدة الثانية', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] },
-        { name: 'الوحدة الثالثة', lessons: ['الدرس الاول', 'الدرس الثاني', 'الدرس الثالث', 'الدرس الرابع', 'الدرس الخامس'] }
-      ]
-    }
-  };
+  sci: {
+    title: 'علوم',
+    id: 'sci',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      }
+    ]
+  },
+
+  math: {
+    title: 'رياضيات',
+    id: 'math',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى - الجبر', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' },
+          { id: 'lesson3', name: 'الدرس الثالث' },
+          { id: 'lesson4', name: 'الدرس الرابع' },
+          { id: 'lesson5', name: 'الدرس الخامس' }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية - الهندسة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' },
+          { id: 'lesson3', name: 'الدرس الثالث' },
+          { id: 'lesson4', name: 'الدرس الرابع' },
+          { id: 'lesson5', name: 'الدرس الخامس' }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة - التفاضل', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' },
+          { id: 'lesson3', name: 'الدرس الثالث' },
+          { id: 'lesson4', name: 'الدرس الرابع' },
+          { id: 'lesson5', name: 'الدرس الخامس' }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة - التكامل', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' },
+          { id: 'lesson2', name: 'الدرس الثاني' },
+          { id: 'lesson3', name: 'الدرس الثالث' },
+          { id: 'lesson4', name: 'الدرس الرابع' },
+          { id: 'lesson5', name: 'الدرس الخامس' }
+        ]
+      }
+    ]
+  },
+
+  arabic: {
+    title: 'اللغة العربية',
+    id: 'arabic',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى - النحو', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية - البلاغة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة - الأدب', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة - القراءة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      }
+    ]
+  },
+
+  english: {
+    title: 'اللغة الإنجليزية',
+    id: 'english',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      }
+    ]
+  },
+
+  social: {
+    title: 'الدراسات الاجتماعية',
+    id: 'social',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      }
+    ]
+  },
+
+  computer: {
+    title: 'حاسب الي',
+    id: 'computer',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson5', name: 'الدرس الخامس' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' },
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson4', name: 'الدرس الرابع',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson5', name: 'الدرس الخامس',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      }
+    ]
+  },
+  religion: {
+    title: 'التربية الدينية',
+    id: 'religiousEducation',
+    units: [
+      { id: 'unit1', name: 'الوحدة الاولى - العقيدة', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit2', name: 'الوحدة الثانية - الفقه', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      },
+      { id: 'unit3', name: 'الوحدة الثالثة - السيرة النبوية', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث' ,video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1' }
+        ]
+      },
+      { id: 'unit4', name: 'الوحدة الرابعة - التفسير', lessons: [
+          { id: 'lesson1', name: 'الدرس الاول',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }, 
+          { id: 'lesson2', name: 'الدرس الثاني',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  },
+          { id: 'lesson3', name: 'الدرس الثالث',video:'https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1'  }
+        ]
+      }
+    ]
+  }
+  
+};
+
+
