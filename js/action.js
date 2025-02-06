@@ -1,5 +1,6 @@
 // Select the class bubble
 time = document.getElementsByClassName('bubbles')[0];
+
 let lastScrollY = 0;
 window.addEventListener('scroll', function () {
 
@@ -20,8 +21,6 @@ window.addEventListener('scroll', function () {
     sky.style.top = value * 0.25 + 'px';
     mountains.style.top = value * 0.25 + 'px';
 
-    header.style.top = value * 0.7 + 'px';
-    sun.style.top = value * 1 + 'px';
 
   
 
@@ -227,3 +226,22 @@ function showUnits(subject) {
     `;
   }).join('');
 }
+navbar=document.querySelector(".Categories")
+
+window.addEventListener("DOMContentLoaded", function() {
+  let header = document.getElementById("header");
+  let button = document.getElementById("top");
+
+  function updateHeader() {
+      if (window.scrollY >300) {  
+          header.classList.add("navchange");
+          button.style.display = "block";
+      } else {
+          header.classList.remove("navchange");
+          button.style.display = "none";
+      }
+  }
+
+  updateHeader(); // حتى يطبق التأثير فورًا عند تحميل الصفحة
+  window.addEventListener("scroll", updateHeader);
+});

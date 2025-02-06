@@ -416,3 +416,12 @@ input, select {
 input.error-border {
     border-color: red;
 }
+.logo {
+    width: 500px;
+    height: 200px;
+    background-image: url('../dds.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 90%;
+}
+

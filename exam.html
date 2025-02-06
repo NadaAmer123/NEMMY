@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أسئلة امتحان</title>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/exam.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/all.min.css" />
 
 </head>
 <body>
+   
     <div class="iframe-container">
+        <header id="header" class="header">
+      
+            <ul>
+                <li><a href="test1.html" class="active">الصفحه الرئسيه</a></li>
+                <li><a href="test1.html#sec">من نحن</a></li>
+                <li><a href="test1.html#secindex">المواد الدراسية</a></li>
+                <li><a href="test1.html#footer">تواصل معنا</a></li>
+            </ul>
+            <a href="#" class="logo" >NEMMY</a>
+        
+            
+        </header>
         <div class="containerq">
             <h2>أسئلة امتحان على الدرس الأول</h2>
     
@@ -97,7 +113,18 @@ document.addEventListener("visibilitychange", function () {
        
             // عرض النتيجة
             document.getElementById('result').innerText = `النتيجة: ${score} من 5`;
-        }
+           
+
+
+    // تحميل محتوى النافبار من ملف navbar.html وإضافته داخل div
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        });
+
+
+      
     </script>
     
 </body>

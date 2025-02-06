@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 
 * {
     margin: 0;
@@ -18,11 +18,12 @@ html {
     scroll-behavior: smooth;
 }
 #header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    padding: 1.5em 5em;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +36,8 @@ html {
     font-weight: 800;
     font-size: 2.5em;
     text-decoration: none;
+   
+    
 }
 
 #header ul {
@@ -45,10 +48,13 @@ html {
 
 #header ul li {
     list-style: none;
-   
+   font-size: 18px;
     margin: 0px 10px;
 }
-
+.nav{
+  display: flex;
+  justify-content: center;
+}
 #header ul li a {
     text-decoration: none;
     padding: 6px 15px;
@@ -146,11 +152,15 @@ html {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: white;
     font-size: 25px;
     border-radius: 50%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     z-index: 100;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+#top i{
+  color: #ffffff;
 }
 /* first */
 .sec {
@@ -159,6 +169,7 @@ html {
     padding-top: 20px;
     background: #ffffff;
     padding-bottom: 15%;
+    padding-top: 100px;
     z-index: 50;
     overflow: hidden;
     height: 100vh;
@@ -455,4 +466,8 @@ nav{
   .grid-container {
     grid-template-columns: 1fr;
   }
+}
+.navchange {
+  background: white;  
+  
 }
