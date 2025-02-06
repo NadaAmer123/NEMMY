@@ -74,26 +74,7 @@ document.addEventListener("scroll", (event) => {
 });
 
 
-// Contains the link for all social media handles
-// var links = document.getElementsByClassName("social-media");
 
-// links[0].addEventListener("click", () => { openlink(1) });
-// links[1].addEventListener("click", () => { openlink(2) });
-// links[2].addEventListener("click", () => { openlink(3) });
-
-
-// function openlink(x) {
-//     if (x == 1) {
-//         window.open("https://www.instagram.com", "_blank");
-//     }
-//     if (x == 2) {
-//         window.open("https://www.linkedin.com", "_blank");
-//     }
-//     if (x == 3) {
-//         window.open("https://github.com", "_blank");
-//     }
-    
-// }
 
 gsap.to("path", {
     strokeDashoffset: 0,
@@ -215,3 +196,34 @@ window.onload=function(){
     
     advance();
   });
+////////////////
+
+
+function showUnits(subject) {
+  const unitContent = document.getElementById('unitContent');
+  const unitTitle = document.getElementById('unitTitle');
+  const unitAccordion = document.getElementById('unitAccordion');
+
+  // Hide the initial grid and show the unit content
+  document.querySelector('.grid-container').style.display = 'none';
+  unitContent.style.display = 'block';
+
+  // Set the title of the subject
+  unitTitle.innerHTML = `<h3>${unitsData[subject].title}</h3>`;
+
+  // Create the accordion for the units and lessons
+  unitAccordion.innerHTML = unitsData[subject].units.map((unit, index) => {
+    return `
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${index}" aria-expanded="false" aria-controls="flush-collapse${index}">
+            ${unit.name}
+          </button>
+        </h2>
+        <div id="flush-collapse${index}" class="accordion-collapse collapse" data-bs-parent="#unitAccordion">
+          ${unit.lessons.map(lesson => `<div class="accordion-body"><a href="#">${lesson}</a></div>`).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
