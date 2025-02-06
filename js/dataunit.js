@@ -12,35 +12,36 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
+            
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -53,35 +54,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -94,35 +95,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -135,35 +136,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -183,35 +184,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -224,35 +225,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -265,35 +266,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -306,35 +307,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -354,21 +355,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
@@ -393,35 +394,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -434,35 +435,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -475,35 +476,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -523,35 +524,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -564,35 +565,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -605,35 +606,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -646,35 +647,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -694,21 +695,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -721,35 +722,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -762,35 +763,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -810,35 +811,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -851,35 +852,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -892,35 +893,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -933,35 +934,35 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson4",
             name: "الدرس الرابع",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson5",
             name: "الدرس الخامس",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -980,21 +981,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -1007,21 +1008,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -1034,21 +1035,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },
@@ -1061,21 +1062,21 @@ const unitsData = {
             name: "الدرس الاول",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
             name: "الدرس الثاني",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
             name: "الدرس الثالث",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "../pdf/Nemmy Platform.pdf",
+            pdf: "./pdf/NemmyPlatform.pdf",
           },
         ],
       },

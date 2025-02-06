@@ -53,12 +53,52 @@
                 <label><input type="radio" name="q5" value="incorrect"> الطاقة يمكن أن تتحول من شكل إلى آخر.</label>
             </div>
             <hr>
-            <button id="submitBtn" onclick="calculateScore()">إظهار النتيجة</button>
+            <button id="submitBtn" onclick="calculateScore()" >إظهار النتيجة</button>
     
-            <div id="result"></div>
+            <div id="result" style="height: 20px;"></div>
+            <button id="submitBtn" style="margin-top: 10px;" onclick="goBack()" >رجوع</button>
+
         </div>
     </div>
-   <script src="./js/exam.js"></script>
+    <script>
+   window.onload = function () {
+    alert("تحذير: إذا غادرت التبويب أو فتحت صفحة أخرى، سيتم إنهاء الامتحان!");
+};
+function goBack() {
+  window.history.back();
+}
+
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        // window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
+    }
+});
+
+
+        function calculateScore() {
+            let score = 0;
+            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+    
+            // التحقق من إجابة جميع الأسئلة
+            for (let q of questions) {
+                if (!document.querySelector(`input[name="${q}"]:checked`)) {
+                    alert("يرجى الإجابة على جميع الأسئلة قبل عرض النتيجة.");
+                    return;
+                }
+            }
+    
+            // حساب الدرجات
+            questions.forEach(q => {
+                const selectedAnswer = document.querySelector(`input[name="${q}"]:checked`);
+                if (selectedAnswer.value === 'correct') {
+                    score++;
+                }
+            });
+       
+            // عرض النتيجة
+            document.getElementById('result').innerText = `النتيجة: ${score} من 5`;
+        }
+    </script>
     
 </body>
 </html>
