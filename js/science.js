@@ -1,19 +1,24 @@
 var coursesSection = document.getElementById("Courses");
 var lessonsecSection = document.getElementById("lessonsec");
 
+function openPDF(pdfUrl) {
+  window.open(pdfUrl, "_blank");
+}
 function loadLesson(unitId, lessonId) {
   coursesSection.style.display = "none"; // إخفاء قسم المواد
   lessonsecSection.style.display = "block"; // إظهار قسم الدروس
-  
+
   // جلب اسم المادة من الرابط
   const subject = getSubjectFromURL();
   if (!subject || !unitsData[subject]) return;
 
   // البحث في جميع المواد للوصول إلى الوحدة المطلوبة
-  const unit = Object.values(unitsData[subject].units).find(u => u.id === unitId);
-  
+  const unit = Object.values(unitsData[subject].units).find(
+    (u) => u.id === unitId
+  );
+
   // البحث عن الدرس داخل الوحدة
-  const lesson = unit.lessons.find(l => l.id === lessonId);
+  const lesson = unit.lessons.find((l) => l.id === lessonId);
   const container = document.getElementById("lessonContainer");
 
   // إضافة المحتوى داخل الحاوية
@@ -30,7 +35,7 @@ function loadLesson(unitId, lessonId) {
       <div class="bttncon">
         <span>${unitsData[subject].title} - ${unit.name} - ${lesson.name}</span>
         <div class="bcon" style="display: flex; flex-direction: column;">
-          <button type="submit" class="btn b" onclick="openPDF()">عرض الملف</button>
+        <button type="submit" class="btn b" onclick="openPDF('${lesson.pdf}')">عرض الملف</button>
           <a href="javascript:void(0)" onclick="toggleSectionBack()">
             <button type="submit" class="btn b">انهي الدرس</button>
           </a>
@@ -39,8 +44,6 @@ function loadLesson(unitId, lessonId) {
     </div>
   `;
 }
-
-
 
 // زر الرجوع
 function toggleSectionBack() {
@@ -66,7 +69,8 @@ function updatePageContent() {
 
   // تحديث الوحدات والدروس
   unitAccordion.innerHTML = unitsData[subject].units
-    .map((unit, index) => `
+    .map(
+      (unit, index) => `
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
@@ -84,14 +88,14 @@ function updatePageContent() {
             .join("")}
         </div>
       </div>
-    `)
+    `
+    )
     .join("");
 }
 
 function openPDF() {
   window.open("./Nemmy Platform.pdf", "_blank");
 }
-
 
 // استدعاء الدالة عند تحميل الصفحة
 document.addEventListener("DOMContentLoaded", updatePageContent);
