@@ -28,47 +28,7 @@ body {
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
 }
-/* start nav */
 
-
-/* زر القائمة للشاشات الصغيرة */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-/* استجابة للشاشات الصغيرة */
-@media (max-width: 768px) {
-  nav .contain {
-    flex-direction: row;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: var(--bg-color);
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-/* end nav */
-section{
-  padding-top: 70px;
-}
 .rightt{
   display: flex; 
   align-items: center;
@@ -185,10 +145,10 @@ body {
   border-radius: 25px;
   width: 100%;
   height: auto;
-  background-image: url('background.jpg');
+  /* background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
 }
 
