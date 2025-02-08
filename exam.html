@@ -17,7 +17,7 @@
         <header id="header" class="header">
       
             <ul>
-                <li><a href="test1.html" class="active">الصفحه الرئسيه</a></li>
+                <li><a href="test1.html" class="active">الصفحه الرئيسية</a></li>
                 <li><a href="test1.html#sec">من نحن</a></li>
                 <li><a href="test1.html#secindex">المواد الدراسية</a></li>
                 <li><a href="test1.html#footer">تواصل معنا</a></li>
@@ -86,7 +86,7 @@ function goBack() {
 
 document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-        // window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
+        window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
     }
 });
 
@@ -113,18 +113,7 @@ document.addEventListener("visibilitychange", function () {
        
             // عرض النتيجة
             document.getElementById('result').innerText = `النتيجة: ${score} من 5`;
-           
-
-
-    // تحميل محتوى النافبار من ملف navbar.html وإضافته داخل div
-    fetch("navbar.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-        });
-
-
-      
+        }
     </script>
     
 </body>
