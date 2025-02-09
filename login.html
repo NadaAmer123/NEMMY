@@ -59,8 +59,10 @@
             </div>
             <div class="form-container" id="form-container">
                 <form id="register-form" class="form" onsubmit="return validatePassword(1,event)">
-                    <div><label for="student-id">ايميل الوالد</label>
+                    <div><label for="student-id">ايميل الطالب </label>
                         <input type="email" id="student-id" name="student-id" required></div>
+                    <div><label for="parent-id">ايميل الوالد</label>
+                        <input type="email" id="parent-id" name="parent-id" required></div>
                     
                     <div><label for="year">الصف</label>
                         <select id="year" name="year">
@@ -86,22 +88,17 @@
                 </form>
                 
                 <form id="login-form" class="form"  >
-                   <div> <label for="login-email">ايميل الوالد</label>
+                   <div> <label for="login-email">ايميل الطالب</label>
                     <input type="email" id="login-email" name="login-email" required></div>
-                    
+                    <div><label for="parent-id">ايميل الوالد</label>
+                        <input type="email" id="login-parent-id" name="parent-id" required></div>
                     <div class="password-container">
                         <label for="password2">كلمة المرور</label>
                         <input  class="psswrd" id="password2" name="password" type="text" required>
                         <i class="op fa-regular fa-eye eye-icon " ></i>
                         <i class="cl fa-regular fa-eye-slash eye-icon" ></i>
                     </div>
-                    
-                    <div class="remember-me">
-                        <span class="forget-me">نسيت كلمة السر؟</span>
-                        <div><input type="checkbox" id="remember-me">
-                            <span for="remember-me">تذكرني</span></div>
-                       
-                    </div>
+                 
                     <button  class="btn log">سجل دخول</button>
 
                     
