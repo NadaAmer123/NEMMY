@@ -1,121 +1,195 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>أسئلة امتحان</title>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/exam.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="./css/exam.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="iframe-container">
-        <header id="header" class="header">
-     
-            <ul>
-              
-                <a href="#" style="text-decoration: none;" > <div class="user" style="display: flex; align-items: center; font-size: 20px;">
-                  <i class="fa-solid fa-user" style="margin: 0 7px;"></i>
-                  <p>مرحبًا <span id="user-name"></span>!</p>
-                </div></a>
-                <li><a href="#" class="active">الصفحة الرئيسية</a></li>
-                <li><a href="#sec">من نحن</a></li>
-                <li><a href="#secindex">المواد الدراسية</a></li>
-                <li><a href="#footer"> تواصل معنا</a></li>
-            </ul>
-            <a href="#" class="logo" >NEMMY</a>
-        
-            
-        </header>
+      <header id="header" class="header">
+        <ul>
+          <a href="#" style="text-decoration: none">
+            <div
+              class="user"
+              style="display: flex; align-items: center; font-size: 20px"
+            >
+              <i class="fa-solid fa-user" style="margin: 0 7px"></i>
+              <p>مرحبًا <span id="user-name"></span>!</p>
+            </div></a
+          >
+          <li><a href="#" class="active">الصفحة الرئيسية</a></li>
+          <li><a href="#sec">من نحن</a></li>
+          <li><a href="#secindex">المواد الدراسية</a></li>
+          <li><a href="#footer"> تواصل معنا</a></li>
+        </ul>
+        <a href="#" class="logo">NEMMY</a>
+      </header>
 
-        <div class="containerq">
-            <h2>أسئلة امتحان على الدرس الأول</h2>
+      <div class="containerq">
+        <h2>أسئلة امتحان على الدرس الأول</h2>
 
-            <div class="question">
-                <p>ما هو الحدث الأبرز الذي بدأ به "العصر العتيق"؟</p>
-                <label><input type="radio" name="q1" value="incorrect"> تأسيس الهرم الأكبر</label><br>
-                <label><input type="radio" name="q1" value="correct"> توحيد الملك نعرمر (مينا) لمملكتي الشمال والجنوب</label><br>
-                <label><input type="radio" name="q1" value="incorrect"> بناء مدينة "من نفر"</label><br>
-                <label><input type="radio" name="q1" value="incorrect"> بناء أول معبد في التاريخ</label>
-            </div>
-            <hr>
-
-            <div class="question">
-                <p>ما الذي اهتم به الملوك في "العصر العتيق" لضمان الاستقرار والأمن؟</p>
-                <label><input type="radio" name="q2" value="incorrect"> بناء الجسور</label><br>
-                <label><input type="radio" name="q2" value="correct"> بناء الحصون لتأمين الحدود</label><br>
-                <label><input type="radio" name="q2" value="incorrect"> تطوير الأسطول البحري</label><br>
-                <label><input type="radio" name="q2" value="incorrect"> تحسين الطرق الصحراوية</label>
-            </div>
-            <hr>
-
-            <div class="question">
-                <p>ما هو التغير الذي طرأ على المقابر الملكية في العصر العتيق؟</p>
-                <label><input type="radio" name="q3" value="incorrect"> تم دفن الملوك في أهرامات</label><br>
-                <label><input type="radio" name="q3" value="incorrect"> تم استخدام الذهب في بناء المقابر</label><br>
-                <label><input type="radio" name="q3" value="correct"> تحولت المقابر من حفرة في الأرض إلى حجرة دفن من الحجر الجيري</label><br>
-                <label><input type="radio" name="q3" value="incorrect"> تم بناء معابد على المقابر</label>
-            </div>
-            <hr>
-
-            <div class="question">
-                <p>ما هي أهم الأنشطة الاقتصادية التي اهتم بها الملوك في العصر العتيق؟</p>
-                <label><input type="radio" name="q4" value="correct"> تأمين التجارة والطرق الصحراوية واستغلال المناجم</label><br>
-                <label><input type="radio" name="q4" value="incorrect"> الزراعة فقط</label><br>
-                <label><input type="radio" name="q4" value="incorrect"> تربية المواشي</label><br>
-                <label><input type="radio" name="q4" value="incorrect"> بناء السفن</label>
-            </div>
-            <hr>
-
-            <div class="question">
-                <p>من هو الملك الذي أسس الأسرة الرابعة وقام بإرسال أسطول بحري لجلب الأخشاب من فينيقيا؟</p>
-                <label><input type="radio" name="q5" value="incorrect"> الملك خوفو</label><br>
-                <label><input type="radio" name="q5" value="incorrect"> الملك خفرع</label><br>
-                <label><input type="radio" name="q5" value="correct"> الملك سنفرو</label><br>
-                <label><input type="radio" name="q5" value="incorrect"> الملك زوسر</label>
-            </div>
-            <hr>
-
-            <button id="submitBtn" onclick="calculateScore()">إظهار النتيجة</button>
-
-            <div id="result" style="height: 20px;"></div>
-            <button id="backBtn" style="margin-top: 10px;" onclick="goBack()">رجوع</button>
+        <div class="question">
+          <p>ما هو الحدث الأبرز الذي بدأ به "العصر العتيق"؟</p>
+          <label
+            ><input type="radio" name="q1" value="incorrect" /> تأسيس الهرم
+            الأكبر</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="correct" /> توحيد الملك نعرمر
+            (مينا) لمملكتي الشمال والجنوب</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="incorrect" /> بناء مدينة "من
+            نفر"</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="incorrect" /> بناء أول معبد في
+            التاريخ</label
+          >
         </div>
+        <hr />
+
+        <div class="question">
+          <p>
+            ما الذي اهتم به الملوك في "العصر العتيق" لضمان الاستقرار والأمن؟
+          </p>
+          <label
+            ><input type="radio" name="q2" value="incorrect" /> بناء
+            الجسور</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="correct" /> بناء الحصون لتأمين
+            الحدود</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="incorrect" /> تطوير الأسطول
+            البحري</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="incorrect" /> تحسين الطرق
+            الصحراوية</label
+          >
+        </div>
+        <hr />
+
+        <div class="question">
+          <p>ما هو التغير الذي طرأ على المقابر الملكية في العصر العتيق؟</p>
+          <label
+            ><input type="radio" name="q3" value="incorrect" /> تم دفن الملوك في
+            أهرامات</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="incorrect" /> تم استخدام الذهب
+            في بناء المقابر</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="correct" /> تحولت المقابر من
+            حفرة في الأرض إلى حجرة دفن من الحجر الجيري</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="incorrect" /> تم بناء معابد
+            على المقابر</label
+          >
+        </div>
+        <hr />
+
+        <div class="question">
+          <p>
+            ما هي أهم الأنشطة الاقتصادية التي اهتم بها الملوك في العصر العتيق؟
+          </p>
+          <label
+            ><input type="radio" name="q4" value="correct" /> تأمين التجارة
+            والطرق الصحراوية واستغلال المناجم</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="incorrect" /> الزراعة
+            فقط</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="incorrect" /> تربية
+            المواشي</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="incorrect" /> بناء
+            السفن</label
+          >
+        </div>
+        <hr />
+
+        <div class="question">
+          <p>
+            من هو الملك الذي أسس الأسرة الرابعة وقام بإرسال أسطول بحري لجلب
+            الأخشاب من فينيقيا؟
+          </p>
+          <label
+            ><input type="radio" name="q5" value="incorrect" /> الملك
+            خوفو</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="incorrect" /> الملك
+            خفرع</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="correct" /> الملك سنفرو</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="incorrect" /> الملك
+            زوسر</label
+          >
+        </div>
+        <hr />
+
+        <button id="submitBtn" onclick="calculateScore()">إظهار النتيجة</button>
+
+        <div id="result" style="height: 20px"></div>
+        <button id="backBtn" style="margin-top: 10px" onclick="goBack()">
+          رجوع
+        </button>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script>
-        let username = localStorage.getItem("username");
-document.addEventListener("DOMContentLoaded", function () {
-  let username = localStorage.getItem("username");
-
-  if (username) {
-      document.getElementById("user-name").textContent = username;
-  } else {
-      document.getElementById("user-name").textContent = "زائر";
-  }
-});
-
+         let parentEmail = localStorage.getItem("parent-id");
+         let studentName = localStorage.getItem("username");
+        document.addEventListener("DOMContentLoaded", function () {
+            emailjs.init("SzIprg_7vq5mh7tev"); // تهيئة emailjs
+            let username = localStorage.getItem("username");
+            document.getElementById("user-name").textContent = username ? username : "زائر";
+        });
+        
         window.onload = function () {
             alert("تحذير: إذا غادرت التبويب أو فتحت صفحة أخرى، سيتم إنهاء الامتحان!");
         };
-
+        
         function goBack() {
             window.history.back();
         }
-
+        
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
             }
         });
-
+        
         function calculateScore() {
             let score = 0;
-            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
-
+            const questions = ["q1", "q2", "q3", "q4", "q5"];
+        
             // التحقق من إجابة جميع الأسئلة
             for (let q of questions) {
                 if (!document.querySelector(`input[name="${q}"]:checked`)) {
@@ -123,29 +197,56 @@ document.addEventListener("DOMContentLoaded", function () {
                     return;
                 }
             }
-
+        
             // حساب الدرجات
-            questions.forEach(q => {
+            questions.forEach((q) => {
                 const selectedAnswer = document.querySelector(`input[name="${q}"]:checked`);
-                if (selectedAnswer.value === 'correct') {
+                if (selectedAnswer.value === "correct") {
                     score++;
                 }
             });
-
+        
             // عرض النتيجة
-            document.getElementById('result').innerText = `النتيجة: ${score} من 5`;
-
+            document.getElementById("result").innerText = `النتيجة: ${score} من 5`;
+        
             // تعطيل جميع أزرار الاختيار بعد ظهور النتيجة
-            questions.forEach(q => {
-                document.querySelectorAll(`input[name="${q}"]`).forEach(input => {
+            questions.forEach((q) => {
+                document.querySelectorAll(`input[name="${q}"]`).forEach((input) => {
                     input.disabled = true;
                 });
             });
-
+        
             // تعطيل زر إظهار النتيجة
-            document.getElementById('submitBtn').disabled = true;
+            document.getElementById("submitBtn").disabled = true;
+        
+            // إرسال الإيميل تلقائيًا بعد حساب النتيجة
+            sendEmail(score);
         }
-    </script>
+        
+        function sendEmail(score) {
+            if (parentEmail && studentName) {
+                var emailParams = {
+                    to_email: parentEmail, // إرسال الإيميل لولي الأمر
+                    student_name: studentName,
+                    scoree: score, // التأكد من أن المتغير متوافق مع قالب الإيميل
+                };
+        
+                emailjs.send("service_esmgsr2", "template_g0hglkz", emailParams)
+                    .then(function () {
+                        alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
+                    })
+                    .catch(function () {
+                        alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
+                    });
+            } else {
+                alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
+            }
+        }
+        console.log(emailjs);
+console.log(localStorage.getItem("student-id"));
+console.log(localStorage.getItem("parent-id"));
+console.log(localStorage.getItem("username"));
 
-</body>
+        </script>
+  </body>
 </html>
