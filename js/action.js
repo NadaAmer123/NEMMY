@@ -104,18 +104,18 @@ gsap.to(".dashed-circle", {
     ease: "linear"
 });
 
-window.onload=function(){
-    $('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:1500,
-    arrows:true,
-    prevArrow:'<button type="button" class="slick-prev"></button>',
-    nextArrow:'<button type="button" class="slick-next"></button>',
-    centerMode:true,
-    slidesToShow:3,
-    slidesToScroll:1
-    });
-  };
+// window.onload=function(){
+//     $('.slider').slick({
+//     autoplay:true,
+//     autoplaySpeed:1500,
+//     arrows:true,
+//     prevArrow:'<button type="button" class="slick-prev"></button>',
+//     nextArrow:'<button type="button" class="slick-next"></button>',
+//     centerMode:true,
+//     slidesToShow:3,
+//     slidesToScroll:1
+//     });
+//   };
 
 
   $('.slider').each(function() {
@@ -257,3 +257,39 @@ window.addEventListener("DOMContentLoaded", function() {
   updateHeader(); // حتى يطبق التأثير فورًا عند تحميل الصفحة
   window.addEventListener("scroll", updateHeader);
 });
+//////////
+var parentEmail = localStorage.getItem("parent-id"); // تأكد أن هذا هو إيميل الأب
+var studentName = localStorage.getItem("username");
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("SzIprg_7vq5mh7tev"); // استبدل بمفتاحك العام
+  var emailParams = {
+    to_email: parentEmail, // استخدام القيمة الحقيقية بدلاً من {{parent_email}}
+};
+
+
+
+  if ( studentName) {
+      var emailParams = {
+          to_email: parentEmail, // إرسال الإيميل لولي الأمر
+          student_name: studentName,
+      };
+
+      emailjs.send("service_esmgsr2", "template_jixd0jy", emailParams)
+          .then(function () {
+              alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
+          })
+          .catch(function () {
+              
+              alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
+          });
+  } else {
+      console.log("❌ البيانات غير موجودة في localStorage!");
+      alert("⚠️ تأكد من تسجيل بيانات الطالب قبل الإرسال.");
+  }
+});
+
+console.log(emailjs);
+console.log(localStorage.getItem("student-id"));
+console.log(localStorage.getItem("parent-id"));
+console.log(localStorage.getItem("username"));
