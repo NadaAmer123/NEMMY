@@ -688,25 +688,25 @@ const unitsData = {
     units: [
       {
         id: "unit1",
-        name: "الوحدة الاولى",
+        name: "الوحدة الأولى : الملامح الطبيعية لقارة الوحدة إفريقيا وحضاراتها القديمة",
         lessons: [
           {
             id: "lesson1",
-            name: "الدرس الاول",
+            name: "الدرس الأول : قارة إفريقيا(الموقع والكشوف الجغرافية)",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
-            name: "الدرس الثاني",
+            name: "الدرس الثاني : مظاهر سطح قارة إفريقيا",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
-            name: "الدرس الثالث",
+            name: "الدرس الثالث : نهر النيل والحضارات القديمة في إفريقيا",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
@@ -715,84 +715,56 @@ const unitsData = {
       },
       {
         id: "unit2",
-        name: "الوحدة الثانية",
+        name: "الوحدة الثانية : الحضارة المصرية القديمة وعالقتها بحضارات إفريقيا",
         lessons: [
           {
             id: "lesson1",
-            name: "الدرس الاول",
+            name: "الدرس الأول : عصر الدولة القديمة (عصر بناة األهرام)",
             video:
-              "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "./pdf/NemmyPlatform.pdf",
+              "./Project Videos/Social-Studies-Lesson1.mp4",
+            pdf: "./Lesson Pdf/الدرس الأول-قارة أفريقيا.pdf",
           },
           {
             id: "lesson2",
-            name: "الدرس الثاني",
+            name: "الدرس الثاني : عصر الدولة الوسطى (عصر الرخاء االقتصادي)",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
-            name: "الدرس الثالث",
+            name: "الدرس الثالث : عصر الدولة الحديثة (عصر المجد الحربي)",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
-          },
-          {
-            id: "lesson4",
-            name: "الدرس الرابع",
-            video:
-              "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "./pdf/NemmyPlatform.pdf",
-          },
-          {
-            id: "lesson5",
-            name: "الدرس الخامس",
-            video:
-              "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "./pdf/NemmyPlatform.pdf",
-          },
+          }
         ],
       },
       {
         id: "unit3",
-        name: "الوحدة الثالثة",
+        name: "الوحدة الثالثة : النظم البيئية في قارة إفريقيا",
         lessons: [
           {
             id: "lesson1",
-            name: "الدرس الاول",
+            name: "الدرس الأول : نظم الغابات في إفريقيا  (الغابات المدارية المطيرة وغابات البحر المتوسط)",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson2",
-            name: "الدرس الثاني",
+            name: "الدرس الثاني : نظم الحشائش (الحارة والمعتدلة)والصحاري الحارة في إفريقيا.",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
           },
           {
             id: "lesson3",
-            name: "الدرس الثالث",
+            name: "الدرس الثالث : النظم البيئية المائية في إفريقيا",
             video:
               "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
             pdf: "./pdf/NemmyPlatform.pdf",
-          },
-          {
-            id: "lesson4",
-            name: "الدرس الرابع",
-            video:
-              "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "./pdf/NemmyPlatform.pdf",
-          },
-          {
-            id: "lesson5",
-            name: "الدرس الخامس",
-            video:
-              "https://www.youtube.com/embed/0Sompef3oa0?si=bG2ev34oLswchNj1",
-            pdf: "./pdf/NemmyPlatform.pdf",
-          },
+          }
         ],
       },
     ],
