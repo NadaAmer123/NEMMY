@@ -1,20 +1,41 @@
+localStorage.clear();
+document.addEventListener("DOMContentLoaded", function () {
+    // استرجاع القيم عند تحميل الصفحة
+    document.querySelectorAll("input, select").forEach(input => {
+        let storedValue = localStorage.getItem(input.name);
+        if (storedValue) {
+            input.value = storedValue;
+        }
+    });
+});
+
+// دالة التحقق وتخزين البيانات
 function validateForm(event, formType) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     
-    // تحديد الحقول حسب نوع النموذج
-    let emailField, passwordField;
+    let emailField, passwordField, parentEmailField, usernameField, yearField;
     
     if (formType === 'register') {
         emailField = document.getElementById('student-id');
+        parentEmailField = document.getElementById('parent-id');
         passwordField = document.getElementById('password1');
+        usernameField = document.getElementById('username');
+        yearField = document.getElementById('year');
     } else if (formType === 'login') {
         emailField = document.getElementById('login-email');
+        parentEmailField = document.getElementById('login-parent-id');
         passwordField = document.getElementById('password2');
     }
 
     // التحقق من صحة البريد الإلكتروني
     if (!emailField.value || !emailRegex.test(emailField.value)) {
         alert("من فضلك أدخل بريد إلكتروني صحيح.");
+        event.preventDefault();
+        return false;
+    }
+
+    if (!parentEmailField.value || !emailRegex.test(parentEmailField.value)) {
+        alert("من فضلك أدخل بريد إلكتروني صحيح للوالد.");
         event.preventDefault();
         return false;
     }
@@ -26,14 +47,22 @@ function validateForm(event, formType) {
         return false;
     }
 
-    // إذا كانت جميع المدخلات صحيحة، التوجيه إلى صفحة أخرى
+    // حفظ القيم في localStorage عند نجاح التحقق
     if (formType === 'register') {
-        event.preventDefault();
-        window.location.href = "./test1.html";  // استبدل بـ URL الصفحة التي تريد التوجيه إليها
+        localStorage.setItem("student-id", emailField.value);
+        localStorage.setItem("parent-id", parentEmailField.value);
+        localStorage.setItem("username", usernameField.value);
+        localStorage.setItem("year", yearField.value);
+        localStorage.setItem("password", passwordField.value);
     } else if (formType === 'login') {
-        event.preventDefault();
-        window.location.href = "./test1.html";  // استبدل بـ URL الصفحة التي تريد التوجيه إليها
+        localStorage.setItem("student-id", emailField.value);
+        localStorage.setItem("parent-id", parentEmailField.value);
+        localStorage.setItem("password", passwordField.value);
     }
+
+    // توجيه المستخدم إلى الصفحة المطلوبة بعد النجاح
+    event.preventDefault();
+    window.location.href = "./test1.html";  // استبدل بـ URL الصفحة التي تريد التوجيه إليها
 
     return true;
 }

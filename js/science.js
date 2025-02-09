@@ -1,3 +1,15 @@
+let username = localStorage.getItem("username");
+document.addEventListener("DOMContentLoaded", function () {
+  let username = localStorage.getItem("username");
+
+  if (username) {
+      document.getElementById("user-name").textContent = username;
+  } else {
+      document.getElementById("user-name").textContent = "زائر";
+  }
+});
+
+
 var coursesSection = document.getElementById("Courses");
 var lessonsecSection = document.getElementById("lessonsec");
 
