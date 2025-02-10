@@ -1055,3 +1055,27 @@ const unitsData = {
     ],
   },
 };
+function countLessons(subjectId) {
+  const subject = unitsData[subjectId];
+  if (!subject) {
+    console.error("Subject not found");
+    return 0;
+  }
+
+  let totalLessons = 0;
+  subject.units.forEach(unit => {
+    totalLessons += unit.lessons.length;
+  });
+
+  return totalLessons;
+}
+
+
+const sciLessons = countLessons("sci");
+
+// تخزين عدد دروس العلوم في localStorage
+localStorage.setItem("sciLessons", sciLessons);
+
+// استرجاع عدد دروس العلوم من localStorage
+const storedSciLessons = localStorage.getItem("sciLessons");
+console.log(`عدد دروس العلوم المخزن: ${storedSciLessons}`);

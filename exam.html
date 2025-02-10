@@ -41,7 +41,7 @@
 
       <div class="containerq">
         <h2>أسئلة امتحان على الدرس الأول</h2>
-
+        <div id="progress" style="margin-top: 20px"></div>
         <div class="question">
           <p>ما هو الحدث الأبرز الذي بدأ به "العصر العتيق"؟</p>
           <label
@@ -164,89 +164,115 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script>
-         let parentEmail = localStorage.getItem("parent-id");
-         let studentName = localStorage.getItem("username");
-        document.addEventListener("DOMContentLoaded", function () {
-            emailjs.init("SzIprg_7vq5mh7tev"); // تهيئة emailjs
-            let username = localStorage.getItem("username");
-            document.getElementById("user-name").textContent = username ? username : "زائر";
-        });
-        
-        window.onload = function () {
-            alert("تحذير: إذا غادرت التبويب أو فتحت صفحة أخرى، سيتم إنهاء الامتحان!");
-        };
-        
-        function goBack() {
-            window.history.back();
-        }
-        
-        document.addEventListener("visibilitychange", function () {
-            if (document.hidden) {
-                window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
-            }
-        });
-        
-        function calculateScore() {
-            let score = 0;
-            const questions = ["q1", "q2", "q3", "q4", "q5"];
-        
-            // التحقق من إجابة جميع الأسئلة
-            for (let q of questions) {
-                if (!document.querySelector(`input[name="${q}"]:checked`)) {
-                    alert("يرجى الإجابة على جميع الأسئلة قبل عرض النتيجة.");
-                    return;
-                }
-            }
-        
-            // حساب الدرجات
-            questions.forEach((q) => {
-                const selectedAnswer = document.querySelector(`input[name="${q}"]:checked`);
-                if (selectedAnswer.value === "correct") {
-                    score++;
-                }
-            });
-        
-            // عرض النتيجة
-            document.getElementById("result").innerText = `النتيجة: ${score} من 5`;
-        
-            // تعطيل جميع أزرار الاختيار بعد ظهور النتيجة
-            questions.forEach((q) => {
-                document.querySelectorAll(`input[name="${q}"]`).forEach((input) => {
-                    input.disabled = true;
-                });
-            });
-        
-            // تعطيل زر إظهار النتيجة
-            document.getElementById("submitBtn").disabled = true;
-        
-            // إرسال الإيميل تلقائيًا بعد حساب النتيجة
-            sendEmail(score);
-        }
-        
-        function sendEmail(score) {
-            if (parentEmail && studentName) {
-                var emailParams = {
-                    to_email: parentEmail, // إرسال الإيميل لولي الأمر
-                    student_name: studentName,
-                    scoree: score, // التأكد من أن المتغير متوافق مع قالب الإيميل
-                };
-        
-                emailjs.send("service_esmgsr2", "template_g0hglkz", emailParams)
-                    .then(function () {
-                        alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
-                    })
-                    .catch(function () {
-                        alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
-                    });
-            } else {
-                alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
-            }
-        }
-        console.log(emailjs);
-console.log(localStorage.getItem("student-id"));
-console.log(localStorage.getItem("parent-id"));
-console.log(localStorage.getItem("username"));
+      let parentEmail = localStorage.getItem("parent-id");
+      let studentName = localStorage.getItem("username");
+      document.addEventListener("DOMContentLoaded", function () {
+        emailjs.init("SzIprg_7vq5mh7tev"); // تهيئة emailjs
+        let username = localStorage.getItem("username");
+        document.getElementById("user-name").textContent = username
+          ? username
+          : "زائر";
+      });
 
-        </script>
+      window.onload = function () {
+        alert(
+          "تحذير: إذا غادرت التبويب أو فتحت صفحة أخرى، سيتم إنهاء الامتحان!"
+        );
+      };
+
+      function goBack() {
+        window.history.back();
+      }
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          window.location.href = "./test1.html"; // استبدلها بالصفحة المناسبة
+        }
+      });
+      let lessonCount = parseInt(localStorage.getItem('lessonCount')) || 0;
+
+function calculateScore() {
+    lessonCount++;
+    localStorage.setItem('lessonCount', lessonCount);
+        let score = 0;
+        const questions = ["q1", "q2", "q3", "q4", "q5"];
+
+        // التحقق من إجابة جميع الأسئلة
+        for (let q of questions) {
+          if (!document.querySelector(`input[name="${q}"]:checked`)) {
+            alert("يرجى الإجابة على جميع الأسئلة قبل عرض النتيجة.");
+            return;
+          }
+        }
+
+        // حساب الدرجات
+        questions.forEach((q) => {
+          const selectedAnswer = document.querySelector(
+            `input[name="${q}"]:checked`
+          );
+          if (selectedAnswer.value === "correct") {
+            score++;
+          }
+        });
+
+        // عرض النتيجة
+        document.getElementById("result").innerText = `النتيجة: ${score} من 5`;
+
+        // تعطيل جميع أزرار الاختيار بعد ظهور النتيجة
+        questions.forEach((q) => {
+          document.querySelectorAll(`input[name="${q}"]`).forEach((input) => {
+            input.disabled = true;
+          });
+        });
+
+        // تعطيل زر إظهار النتيجة
+        document.getElementById("submitBtn").disabled = true;
+
+        // إرسال الإيميل تلقائيًا بعد حساب النتيجة
+        sendEmail(score);
+      }
+console.log(contlesson);
+      function sendEmail(score) {
+        if (parentEmail && studentName) {
+          var emailParams = {
+            to_email: parentEmail, // إرسال الإيميل لولي الأمر
+            student_name: studentName,
+            scoree: score, // التأكد من أن المتغير متوافق مع قالب الإيميل
+          };
+
+          emailjs
+            .send("service_esmgsr2", "template_g0hglkz", emailParams)
+            .then(function () {
+              alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
+            })
+            .catch(function () {
+              alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
+            });
+        } else {
+          alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
+        }
+      }
+      console.log(emailjs);
+      console.log(localStorage.getItem("student-id"));
+      console.log(localStorage.getItem("parent-id"));
+      console.log(localStorage.getItem("username"));
+      /////////////
+      function updateProgress(subjectId, completedLessons) {
+        const totalLessons = countLessons(subjectId);
+        const progressPercentage = (completedLessons / totalLessons) * 100;
+        document.getElementById(
+          "progress"
+        ).innerText = `التقدم: ${progressPercentage.toFixed(2)}%`;
+      }
+
+      // مثال على كيفية استخدام الدالة
+      document
+        .getElementById("submitBtn")
+        .addEventListener("click", function () {
+          const completedLessons = 3; // عدد الدروس المكتملة، يمكنك تغييره بناءً على منطقك
+          updateProgress("sci", completedLessons);
+        });
+
+    </script>
   </body>
 </html>

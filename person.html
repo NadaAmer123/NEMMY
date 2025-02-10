@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle-progress {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        .circle-progress svg {
+            transform: rotate(-90deg);
+        }
+        .circle-progress circle {
+            fill: none;
+            stroke-width: 10;
+        }
+        .circle-progress .bg {
+            stroke: #f3f3f3;
+        }
+        .circle-progress .progress {
+            stroke: #ffc107;
+            stroke-dasharray: 440; /* 2 * PI * radius (70) */
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 1s ease;
+        }
+        .circle-progress .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Progress</h1>
+    <div class="circle-progress">
+        <svg width="150" height="150">
+            <circle class="bg" cx="75" cy="75" r="70"></circle>
+            <circle class="progress" cx="75" cy="75" r="70"></circle>
+        </svg>
+        <div class="percentage">0%</div>
+    </div>
+
+    <script>
+        // استرجاع القيم من localStorage
+        let sciLessons = parseInt(localStorage.getItem('sciLessons'), 10);
+        let lessonCount = parseInt(localStorage.getItem('lessonCount'), 10);
+
+        // التحقق من أن القيم صالحة
+        if (!isNaN(sciLessons) && !isNaN(lessonCount) && sciLessons > 0) {
+            // حساب النسبة المئوية
+            let targetProgressValue = (lessonCount / sciLessons) * 100;
+            let currentProgressValue = 0;
+
+            // تحديث دائرة التقدم تدريجياً
+            let progressCircle = document.querySelector('.circle-progress .progress');
+            let percentageText = document.querySelector('.circle-progress .percentage');
+
+            let interval = setInterval(() => {
+                if (currentProgressValue >= targetProgressValue) {
+                    clearInterval(interval);
+                } else {
+                    currentProgressValue++;
+                    let offset = 440 - (440 * currentProgressValue / 100);
+                    progressCircle.style.strokeDashoffset = offset;
+                    percentageText.textContent = Math.round(currentProgressValue) + '%';
+                }
+            }, 20); // تحديث كل 20 مللي ثانية
+        } else {
+            console.error('تأكد من أن القيم المخزنة في localStorage صالحة.');
+        }
+    </script>
+</body>
+</html>
