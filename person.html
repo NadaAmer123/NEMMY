@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/nav.css" />
     <style>
       .circle-progress {
@@ -18,6 +21,16 @@
         fill: none;
         stroke-width: 10;
       }
+      button {
+    background-color:tomato;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
       .circle-progress .bg {
         stroke: #f3f3f3;
       }
@@ -47,6 +60,7 @@
 
       }
       body {
+        font-family: "El Messiri", serif;
         margin: 0px;
         padding: 0px;
         background-position: center;
@@ -92,9 +106,12 @@
         text-align: center;
         width: 30%;
         margin-bottom: 20px;
+        font-size: 20px;
       }
       
         .conper{
+        font-family: "El Messiri", serif;
+
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -117,22 +134,26 @@
             <p>مرحبًا <span id="user-name"></span>!</p>
           </div></a
         >
-        <li><a href="#" class="active">الصفحة الرئيسية</a></li>
-        <li><a href="#sec">من نحن</a></li>
-        <li><a href="#secindex">المواد الدراسية</a></li>
-        <li><a href="#footer"> تواصل معنا</a></li>
+        <li><a href="test1.html" class="active">الصفحة الرئيسية</a></li>
+        <li><a href="test1.html#sec">من نحن</a></li>
+        <li><a href="test1.html#secindex">المواد الدراسية</a></li>
+        <li><a href="test1.html#footer"> تواصل معنا</a></li>
       </ul>
       <a href="#" class="logo">NEMMY</a>
     </header>
    
     <section class="section">
+      <div class="im" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <img src="./images/as.jpg" alt="" srcset="" style="width: 200px; height: 200px; margin-left: 20px;">
+        <p style="font-size: 30px;">مرحبا بك في NEMMY</p>
+      </div>
       <div class="tab" >
         <table class="table table-striped table-bordered text-center">
-          <thead class="table-dark">
+          <thead style="background-color: blue;">
             <tr>
               <th>المعلومة</th>
               <th>التفاصيل</th>
-              <th>إجراء</th>
+              <th>تعديل</th>
             </tr>
           </thead>
           <tbody>
@@ -161,7 +182,7 @@
         </table>
         
       </div>
-      <h1 style="margin-bottom: 20px; font-size: 35px;">التقدم</h1>
+      <h1 style="margin-bottom: 20px; font-size: 40px;">التقدم</h1>
       <div class="conper">
         
         <div class="sciprog">
@@ -236,6 +257,7 @@
         </div>
         
       </div>
+      <div><a href="certificate.html"><button>الشهادة</button></a></div>
     </section>
 
     <script>

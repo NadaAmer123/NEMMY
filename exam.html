@@ -231,8 +231,37 @@ function calculateScore() {
 
         // إرسال الإيميل تلقائيًا بعد حساب النتيجة
         sendEmail(score);
+        // إنشاء زر جديد بناءً على النتيجة
+        const newButton = document.createElement('button');
+          newButton.classList.add('dynamic-button');
+          
+          if (score >= 3) {
+              newButton.textContent = 'الانتقال إلى الدرس الثاني';
+              newButton.style.backgroundColor = '#4CAF50'; // لون أخضر
+              newButton.onclick = function() {
+                  window.location.href = 'test1.html#secindex'; // استبدل بالرابط الفعلي
+              };
+          } else {
+              newButton.textContent = 'إعادة مراجعة الدرس';
+              newButton.style.backgroundColor = 'red'; // لون أحمر
+              newButton.onclick = function() {
+                  window.location.href = 'test1.html#secindex'; // استبدل بالرابط الفعلي
+              };
+          }
+      
+          // إضافة التنسيقات للأزرار
+          newButton.style.color = 'white';
+          newButton.style.padding = '10px';
+          newButton.style.borderRadius = '5px';
+          newButton.style.marginTop = '10px';
+          newButton.style.cursor = 'pointer';
+      
+          // إدراج الزر قبل زر الرجوع
+          const container = document.querySelector('.containerq');
+          const backButton = document.querySelector('#submitBtn[onclick="goBack()"]');
+          container.insertBefore(newButton, backButton);
+
       }
-console.log(contlesson);
       function sendEmail(score) {
         if (parentEmail && studentName) {
           var emailParams = {
@@ -253,10 +282,7 @@ console.log(contlesson);
           alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
         }
       }
-      console.log(emailjs);
-      console.log(localStorage.getItem("student-id"));
-      console.log(localStorage.getItem("parent-id"));
-      console.log(localStorage.getItem("username"));
+   
       /////////////
       function updateProgress(subjectId, completedLessons) {
         const totalLessons = countLessons(subjectId);

@@ -104,20 +104,6 @@ gsap.to(".dashed-circle", {
     ease: "linear"
 });
 
-// window.onload=function(){
-//     $('.slider').slick({
-//     autoplay:true,
-//     autoplaySpeed:1500,
-//     arrows:true,
-//     prevArrow:'<button type="button" class="slick-prev"></button>',
-//     nextArrow:'<button type="button" class="slick-next"></button>',
-//     centerMode:true,
-//     slidesToShow:3,
-//     slidesToScroll:1
-//     });
-//   };
-
-
   $('.slider').each(function() {
     var $this = $(this);
     var $group = $this.find('.slide_group');
@@ -276,13 +262,8 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       emailjs.send("service_esmgsr2", "template_jixd0jy", emailParams)
-          .then(function () {
-              alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
-          })
-          .catch(function () {
-              
-              alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
-          });
+         
+        
   } else {
       console.log("❌ البيانات غير موجودة في localStorage!");
       alert("⚠️ تأكد من تسجيل بيانات الطالب قبل الإرسال.");
