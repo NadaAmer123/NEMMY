@@ -1,100 +1,199 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>شات بوت الأسئلة</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        #chat-container { width: 50%; margin: auto; border: 1px solid #ccc; padding: 10px; }
-        #chat-box { height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 5px; margin-bottom: 10px; }
-        .message { padding: 5px; margin: 5px; border-radius: 5px; }
-        .user { background-color: #d1ecf1; text-align: left; }
-        .bot { background-color: #f8d7da; text-align: right; }
-        .suggestion-btn { display: block; width: 100%; margin: 5px 0; padding: 5px; cursor: pointer; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --color: #e1e1e1;
+        background-color: #f3f3f3;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            transparent 24%,
+            var(--color) 25%,
+            var(--color) 26%,
+            transparent 27%,
+            transparent 74%,
+            var(--color) 75%,
+            var(--color) 76%,
+            transparent 77%,
+            transparent
+          ),
+          linear-gradient(
+            90deg,
+            transparent 24%,
+            var(--color) 25%,
+            var(--color) 26%,
+            transparent 27%,
+            transparent 74%,
+            var(--color) 75%,
+            var(--color) 76%,
+            transparent 77%,
+            transparent
+          );
+        background-size: 55px 55px;
+      }
+      #chat-container {
+        background-color: white;
+        width: 50%;
+        margin: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        height: 80%;
+        padding: 15px;
+        border-radius: 20px;
+      }
+      #chat-box {
+        height: 50%;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      .message {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .user {
+        background-color: #d1ecf1;
+        text-align: left;
+      }
+      .bot {
+        background-color: tomato;
+        text-align: right;
+      }
+      .suggestion-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 5px;
+        cursor: pointer;
+        background-color: tomato;
+        font-size: 20px;
+        border: 0;
+        border-radius: 5px;
+      }
+      .chatbtn{
+        background-color: white;
+        
+        
+      }
+      .chatbtnn{
+        background-color: tomato;
+        font-size: 20px;
+        border: 0;
+        border-radius: 5px;
+        
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="chat-container">
-        <h2>شات بوت الأسئلة</h2>
-        <div id="chat-box"></div>
-        <input type="text" id="user-input" placeholder="اكتب سؤالك هنا...">
-        <button id="send-btn">إرسال</button>
-        <div id="suggested-questions"></div>
+      <h2>شات بوت الأسئلة</h2>
+      <div id="chat-box" dir="rtl"></div>
+      <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." />
+      <button class="chatbtnn" id="send-btn">إرسال</button>
+      <div  class="chatbtn" id="suggested-questions"></div>
     </div>
 
     <script>
-        const questionsLibrary = {
-            "ما هي عناصر المناخ؟": "عناصر المناخ تشمل درجة الحرارة، الضغط الجوي، الرياح، والهطول.",
-            "كيف يمكن حساب مساحة المثلث؟": "مساحة المثلث = 0.5 × القاعدة × الارتفاع.",
-            "ما هو تعريف الذرة؟": "الذرة هي الوحدة الأساسية للمادة وتتكون من نواة تحتوي على بروتونات ونيوترونات محاطة بإلكترونات.",
-            "اذكر أهم مصادر الطاقة المتجددة؟": "من مصادر الطاقة المتجددة: الطاقة الشمسية، طاقة الرياح، والطاقة المائية.",
-            "كيف تتكون الصخور النارية؟": "تتكون الصخور النارية من تصلب وتبلور الصهارة البركانية.",
-            "ما الفرق بين الجملة الاسمية والجملة الفعلية؟": "الجملة الاسمية تبدأ باسم، بينما الجملة الفعلية تبدأ بفعل.",
-            "ما هي عاصمة فرنسا؟": "عاصمة فرنسا هي باريس.",
-            "كيف تعمل الدائرة الكهربائية؟": "تعمل الدائرة الكهربائية عن طريق تدفق التيار الكهربائي من مصدر الطاقة عبر الأسلاك إلى المكونات الكهربائية.",
-            "اذكر أمثلة على المواد الموصلة والعازلة؟": "المواد الموصلة مثل النحاس والألمنيوم، والمواد العازلة مثل البلاستيك والمطاط.",
-            "ما هو قانون الجذب العام لنيوتن؟": "ينص قانون الجذب العام لنيوتن على أن كل جسمين في الكون يجذبان بعضهما بقوة تتناسب طرديًا مع حاصل ضرب كتلتيهما وعكسيًا مع مربع المسافة بينهما."
-        };
+      const questionsLibrary = {
+        "ما هي عناصر المناخ؟":
+          "عناصر المناخ تشمل درجة الحرارة، الضغط الجوي، الرياح، والهطول.",
+        "كيف يمكن حساب مساحة المثلث؟":
+          "مساحة المثلث = 0.5 × القاعدة × الارتفاع.",
+        "ما هو تعريف الذرة؟":
+          "الذرة هي الوحدة الأساسية للمادة وتتكون من نواة تحتوي على بروتونات ونيوترونات محاطة بإلكترونات.",
+        "اذكر أهم مصادر الطاقة المتجددة؟":
+          "من مصادر الطاقة المتجددة: الطاقة الشمسية، طاقة الرياح، والطاقة المائية.",
+        "كيف تتكون الصخور النارية؟":
+          "تتكون الصخور النارية من تصلب وتبلور الصهارة البركانية.",
+        "ما الفرق بين الجملة الاسمية والجملة الفعلية؟":
+          "الجملة الاسمية تبدأ باسم، بينما الجملة الفعلية تبدأ بفعل.",
+        "ما هي عاصمة فرنسا؟": "عاصمة فرنسا هي باريس.",
+        "كيف تعمل الدائرة الكهربائية؟":
+          "تعمل الدائرة الكهربائية عن طريق تدفق التيار الكهربائي من مصدر الطاقة عبر الأسلاك إلى المكونات الكهربائية.",
+        "اذكر أمثلة على المواد الموصلة والعازلة؟":
+          "المواد الموصلة مثل النحاس والألمنيوم، والمواد العازلة مثل البلاستيك والمطاط.",
+        "ما هو قانون الجذب العام لنيوتن؟":
+          "ينص قانون الجذب العام لنيوتن على أن كل جسمين في الكون يجذبان بعضهما بقوة تتناسب طرديًا مع حاصل ضرب كتلتيهما وعكسيًا مع مربع المسافة بينهما.",
+      };
 
-        function getRandomQuestions(num = 3) {
-            let shuffled = Object.keys(questionsLibrary).sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, num);
+      let availableQuestions = Object.keys(questionsLibrary);
+
+      function getRandomQuestions(num = 3) {
+        let shuffled = availableQuestions.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, num);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const chatBox = document.getElementById("chat-box");
+        const inputField = document.getElementById("user-input");
+        const sendButton = document.getElementById("send-btn");
+        const suggestedQuestions = document.getElementById(
+          "suggested-questions"
+        );
+
+        function addMessage(text, sender = "user") {
+          const msgDiv = document.createElement("div");
+          msgDiv.classList.add("message", sender);
+          msgDiv.textContent = text;
+          chatBox.appendChild(msgDiv);
+          chatBox.scrollTop = chatBox.scrollHeight;
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const chatBox = document.getElementById("chat-box");
-            const inputField = document.getElementById("user-input");
-            const sendButton = document.getElementById("send-btn");
-            const suggestedQuestions = document.getElementById("suggested-questions");
-
-            function addMessage(text, sender = "user") {
-                const msgDiv = document.createElement("div");
-                msgDiv.classList.add("message", sender);
-                msgDiv.textContent = text;
-                chatBox.appendChild(msgDiv);
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-
-            function suggestQuestions() {
-                suggestedQuestions.innerHTML = "";
-                getRandomQuestions().forEach(q => {
-                    let btn = document.createElement("button");
-                    btn.textContent = q;
-                    btn.classList.add("suggestion-btn");
-                    btn.onclick = function() { 
-                        addMessage(q, "user"); 
-                        setTimeout(() => respondToQuestion(q), 500); 
-                    };
-                    suggestedQuestions.appendChild(btn);
-                });
-            }
-
-            function respondToQuestion(question) {
-                if (questionsLibrary[question]) {
-                    addMessage(questionsLibrary[question], "bot");
-                } else {
-                    addMessage("عذرًا، لا أملك إجابة لهذا السؤال حاليًا.", "bot");
-                }
-            }
-
-            sendButton.onclick = function() {
-                const userText = inputField.value.trim();
-                if (userText) {
-                    addMessage(userText, "user");
-                    setTimeout(() => respondToQuestion(userText), 500);
-                    inputField.value = "";
-                }
+        function suggestQuestions() {
+          suggestedQuestions.innerHTML = "";
+          getRandomQuestions().forEach((q) => {
+            let btn = document.createElement("button");
+            btn.textContent = q;
+            btn.classList.add("suggestion-btn");
+            btn.onclick = function () {
+              addMessage(q, "user");
+              setTimeout(() => respondToQuestion(q), 500);
+              availableQuestions = availableQuestions.filter(
+                (question) => question !== q
+              );
+              suggestQuestions();
             };
+            suggestedQuestions.appendChild(btn);
+          });
+        }
 
-            inputField.addEventListener("keypress", function(event) {
-                if (event.key === "Enter") {
-                    sendButton.click();
-                }
-            });
+        function respondToQuestion(question) {
+          if (questionsLibrary[question]) {
+            addMessage(questionsLibrary[question], "bot");
+          } else {
+            addMessage("عذرًا، لا أملك إجابة لهذا السؤال حاليًا.", "bot");
+          }
+        }
 
-            suggestQuestions();
+        sendButton.onclick = function () {
+          const userText = inputField.value.trim();
+          if (userText) {
+            addMessage(userText, "user");
+            setTimeout(() => respondToQuestion(userText), 500);
+            inputField.value = "";
+          }
+        };
+
+        inputField.addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            sendButton.click();
+          }
         });
+
+        suggestQuestions();
+      });
     </script>
-</body>
+  </body>
 </html>
