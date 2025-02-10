@@ -1070,12 +1070,6 @@ function countLessons(subjectId) {
   return totalLessons;
 }
 
-
+// مثال على كيفية استخدام الدالة
 const sciLessons = countLessons("sci");
-
-// تخزين عدد دروس العلوم في localStorage
-localStorage.setItem("sciLessons", sciLessons);
-
-// استرجاع عدد دروس العلوم من localStorage
-const storedSciLessons = localStorage.getItem("sciLessons");
-console.log(`عدد دروس العلوم المخزن: ${storedSciLessons}`);
+localStorage.setItem("sciLessons",sciLessons)
