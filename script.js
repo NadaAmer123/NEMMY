@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     let storedUsername = localStorage.getItem("username");
 document.getElementById("student-name").textContent = storedUsername || "غير متوفر";
-  let courseName = " الحضارة المصرية القديمة وعالقتها بحضارات إفريقيا"; // يمكنك التعديل حسب الدورة المناسبة
+//   let courseName = " الحضارة المصرية القديمة وعالقتها بحضارات إفريقيا"; // يمكنك التعديل حسب الدورة المناسبة
   
-  document.getElementById("course-name").innerText = courseName;
+//   document.getElementById("course-name").innerText = courseName;
 
   // إضافة التاريخ الحالي
   let today = new Date().toLocaleDateString("ar-EG", { year: "numeric", month: "long", day: "numeric" });
