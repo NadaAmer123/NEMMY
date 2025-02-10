@@ -1071,5 +1071,5 @@ function countLessons(subjectId) {
 }
 
 // مثال على كيفية استخدام الدالة
-const sciLessons = countLessons("sci");
-localStorage.setItem("sciLessons",sciLessons)
+const socialLessons = countLessons("social");
+localStorage.setItem("socialLessons",socialLessons)

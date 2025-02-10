@@ -35,25 +35,27 @@
         font-size: 24px;
         font-weight: bold;
       }
-      .conper {
+      .section {
         margin: 50px;
+        margin-top: 100px;
         background-color: #ffff;
         border-radius: 15px;
-        height: 80%;
         width: 80%;
         padding: 20px;
+        /* display: flex;
+        justify-content: space-between; */
 
       }
-      section {
+      body {
         margin: 0px;
         padding: 0px;
         background-position: center;
         background-size: cover;
         text-align: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 100vh;
         align-items: center;
         --color: #e1e1e1;
         background-color: #f3f3f3;
@@ -84,9 +86,24 @@
         background-size: 55px 55px;
       }
       .sciprog{
-        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        margin-bottom: 20px;
       }
+      
+        .conper{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -107,11 +124,48 @@
       </ul>
       <a href="#" class="logo">NEMMY</a>
     </header>
-    <section>
+   
+    <section class="section">
+      <div class="tab" >
+        <table class="table table-striped table-bordered text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>المعلومة</th>
+              <th>التفاصيل</th>
+              <th>إجراء</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>اسم الطالب</td>
+              <td id="username"></td>
+              <td><i class="fas fa-edit text-primary" onclick="editField('username', 'username')"></i></td>
+            </tr>
+            <tr>
+              <td>الصف الدراسي</td>
+              <td id="year"></td>
+              <td><i class="fas fa-edit text-primary" onclick="editField('year', 'year')"></i></td>
+            </tr>
+            <tr>
+              <td>إيميل الطالب</td>
+              <td id="student-id"></td>
+              <td><i class="fas fa-edit text-primary" onclick="editField('student-id', 'student-id')"></i></td>
+            </tr>
+            <tr>
+              <td>إيميل الوالد</td>
+              <td id="parent-id"></td>
+              <td><i class="fas fa-edit text-primary" onclick="editField('parent-id', 'parent-id')"></i></td>
+            </tr>
+           
+          </tbody>
+        </table>
+        
+      </div>
+      <h1 style="margin-bottom: 20px; font-size: 35px;">التقدم</h1>
       <div class="conper">
-        <h1>التقدم</h1>
+        
         <div class="sciprog">
-            <h2>مادة العلوم</h2>
+            <h2>مادة الدراسات الاجتماعية</h2>
             <div class="circle-progress">
                 <svg width="150" height="150">
                   <circle class="bg" cx="75" cy="75" r="70"></circle>
@@ -120,18 +174,79 @@
                 <div class="percentage">0%</div>
               </div>
         </div>
+        <div class="sciprog">
+          <h2>اللغة العربية</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 88;"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+          </div>
+        </div>
+        <div class="sciprog">
+          <h2>اللغة الانجليزية</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 242;"></circle>
+            </svg>
+            <div class="percentage">45%</div>
+          </div>
+        </div>
+        <div class="sciprog">
+          <h2>العلوم</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 198;"></circle>
+            </svg>
+            <div class="percentage">55%</div>
+          </div>
+        </div>
+        <div class="sciprog">
+          <h2>التربية الدينية</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 308;"></circle>
+            </svg>
+            <div class="percentage">30%</div>
+          </div>
+        </div>
+        <div class="sciprog">
+          <h2>الرياضيات</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 220;"></circle>
+            </svg>
+            <div class="percentage">50%</div>
+          </div>
+        </div>
+        <div class="sciprog">
+          <h2>الحاسب الالي</h2>
+          <div class="circle-progress">
+            <svg width="150" height="150">
+              <circle class="bg" cx="75" cy="75" r="70"></circle>
+              <circle class="progress" cx="75" cy="75" r="70" style="stroke-dashoffset: 295;"></circle>
+            </svg>
+            <div class="percentage">33%</div>
+          </div>
+        </div>
+        
       </div>
     </section>
 
     <script>
       // استرجاع القيم من localStorage
-      let sciLessons = parseInt(localStorage.getItem("sciLessons"), 10);
+      let socialLessons = parseInt(localStorage.getItem("socialLessons"), 10);
       let lessonCount = parseInt(localStorage.getItem("lessonCount"), 10);
 
       // التحقق من أن القيم صالحة
-      if (!isNaN(sciLessons) && !isNaN(lessonCount) && sciLessons > 0) {
+      if (!isNaN(socialLessons) && !isNaN(lessonCount) && socialLessons > 0) {
         // حساب النسبة المئوية
-        let targetProgressValue = (lessonCount / sciLessons) * 100;
+        let targetProgressValue = (lessonCount / socialLessons) * 100;
         let currentProgressValue = 0;
 
         // تحديث دائرة التقدم تدريجياً
@@ -155,6 +270,11 @@
       } else {
         console.error("تأكد من أن القيم المخزنة في localStorage صالحة.");
       }
+    document.getElementById("username").textContent = localStorage.getItem("username") || "غير متوفر";
+    document.getElementById("year").textContent = localStorage.getItem("year") + " year";
+    document.getElementById("student-id").textContent = localStorage.getItem("student-id") || "غير متوفر";
+    document.getElementById("parent-id").textContent = localStorage.getItem("parent-id") || "غير متوفر";
+  
     </script>
     <script src="./js/action.js"></script>
   </body>
