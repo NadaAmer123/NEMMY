@@ -67,6 +67,36 @@ html {
     background: #003549;
     color: white;
 }
+
+select option {
+  list-style: none;
+ 
+  margin: 0px 10px;
+}
+
+ select option a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #003549;
+  border-radius: 20px;
+}
+
+select {
+  font-family: "El Messiri", serif;
+  background-color: transparent;
+  color: #003549;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 6px 15px;
+  border: 0px ;
+  cursor: pointer;
+  appearance: none; 
+}
+
+select:hover {
+  background: #003549;
+  color: white;
+}
 /* end head */
 /* The Section Body... Set it to max size of screen */
 .main {

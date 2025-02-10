@@ -1,0 +1,82 @@
+<!-- تم الإنشاء بواسطة CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق اختبار رائع | CodingNepal</title>
+  <!-- ربط ملف CSS لتنسيق التطبيق -->
+  <link rel="stylesheet" href="style.css">
+  <!-- ربط مكتبة FontAwesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <!-- زر بدء الاختبار -->
+  <div class="start_btn"><button>ابدأ الاختبار</button></div>
+
+  <!-- صندوق المعلومات (يظهر عند بدء الاختبار) -->
+  <div class="info_box">
+    <div class="info-title"><span>بعض قواعد هذا الاختبار</span></div>
+    <div class="info-list">
+      <div class="info">1. لديك فقط <span>15 ثانية</span> لكل سؤال.</div>
+      <div class="info">2. بمجرد اختيار إجابتك، لا يمكنك تغييرها.</div>
+      <div class="info">3. لا يمكنك اختيار أي إجابة بعد انتهاء الوقت.</div>
+      <div class="info">4. لا يمكنك الخروج من الاختبار أثناء اللعب.</div>
+      <div class="info">5. ستحصل على نقاط بناءً على إجاباتك الصحيحة.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">خروج من الاختبار</button>
+      <button class="restart">متابعة</button>
+    </div>
+  </div>
+
+  <!-- صندوق الاختبار (المحتوى الرئيسي للاختبار) -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">تطبيق الاختبار</div>
+      <div class="timer">
+        <div class="time_left_txt">Time Left</div>
+        <div class="timer_sec">15</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- سيتم إدراج نص السؤال هنا بواسطة JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- سيتم إدراج الاختيارات هنا بواسطة JavaScript -->
+      </div>
+    </section>
+
+    <!-- تذييل صندوق الاختبار -->
+    <footer>
+      <div class="total_que">
+        <!-- سيتم إدراج عدد الأسئلة هنا بواسطة JavaScript -->
+      </div>
+      <button class="next_btn">التالي</button>
+    </footer>
+  </div>
+
+  <!-- صندوق النتيجة (يظهر بعد انتهاء الاختبار) -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">لقد أكملت الاختبار!</div>
+    <div class="score_text">
+      <!-- سيتم إدراج نتيجة الاختبار هنا بواسطة JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">إعادة الاختبار</button>
+      <button class="quit">الخروج</button>
+    </div>
+  </div>
+
+  <!-- ملف JavaScript لإدارة الأسئلة والاختيارات -->
+  <script src="js/questions.js"></script>
+
+  <!-- ملف JavaScript الذي يحتوي على منطق الاختبار -->
+  <script src="js/script.js"></script>
+</body>
+</html>
