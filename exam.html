@@ -262,26 +262,25 @@ function calculateScore() {
           container.insertBefore(newButton, backButton);
 
       }
-      function sendEmail(score) {
-        if (parentEmail && studentName) {
-          var emailParams = {
-            to_email: parentEmail, // إرسال الإيميل لولي الأمر
-            student_name: studentName,
-            scoree: score, // التأكد من أن المتغير متوافق مع قالب الإيميل
-          };
+      // function sendEmail(score) {
+      //   if (parentEmail && studentName) {
+      //     var emailParams = {
+      //       to_email: parentEmail, // إرسال الإيميل لولي الأمر
+      //       student_name: "لقد حصل"+studentName+" علي درجة "+score+ " من 5" +"في الاختبار",
+      //     };
 
-          emailjs
-            .send("service_esmgsr2", "template_g0hglkz", emailParams)
-            .then(function () {
-              alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
-            })
-            .catch(function () {
-              alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
-            });
-        } else {
-          alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
-        }
-      }
+      //     emailjs
+      //       .send("service_esmgsr2", "template_g0hglkz", emailParams)
+      //       .then(function () {
+      //         alert("📧 تم إرسال الإيميل بنجاح إلى ولي الأمر.");
+      //       })
+      //       .catch(function () {
+      //         alert("⚠️ حدث خطأ أثناء إرسال الإيميل.");
+      //       });
+      //   } else {
+      //     alert("⚠️ تأكد من تسجيل بيانات الطالب وولي الأمر قبل الإرسال.");
+      //   }
+      // }
    
       /////////////
       function updateProgress(subjectId, completedLessons) {
