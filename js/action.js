@@ -247,25 +247,25 @@ window.addEventListener("DOMContentLoaded", function() {
 var parentEmail = localStorage.getItem("parent-id"); // تأكد أن هذا هو إيميل الأب
 var studentName = localStorage.getItem("username");
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   emailjs.init("SzIprg_7vq5mh7tev"); // استبدل بمفتاحك العام
-//   var emailParams = {
-//     to_email: parentEmail, // استخدام القيمة الحقيقية بدلاً من {{parent_email}}
-// };
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("SzIprg_7vq5mh7tev"); // استبدل بمفتاحك العام
+  var emailParams = {
+    to_email: parentEmail, // استخدام القيمة الحقيقية بدلاً من {{parent_email}}
+};
 
 
 
-//   if ( studentName) {
-//       var emailParams = {
-//           to_email: parentEmail, // إرسال الإيميل لولي الأمر
-//           student_name: studentName,
-//       };
-//       emailjs.send("service_esmgsr2", "template_jixd0jy", emailParams) 
+  if ( studentName) {
+      var emailParams = {
+          to_email: parentEmail, // إرسال الإيميل لولي الأمر
+          student_name: studentName,
+      };
+      emailjs.send("service_esmgsr2", "template_jixd0jy", emailParams) 
         
-//   } else {
-//       alert("⚠️ تأكد من تسجيل بيانات الطالب قبل الإرسال.");
-//   }
-// });
+  } else {
+      alert("⚠️ تأكد من تسجيل بيانات الطالب قبل الإرسال.");
+  }
+});
 
 console.log(emailjs);
 console.log(localStorage.getItem("student-id"));

@@ -266,8 +266,8 @@ function calculateScore() {
          if (parentEmail && studentName) {
            var emailParams = {
              to_email: parentEmail, // إرسال الإيميل لولي الأمر
-             student_name: "لقد حصل"+studentName+" علي درجة "+score+ " من 5" +"في الاختبار",
-           };
+             student_name : "Student " + studentName + " has scored " + score + " out of 5 in the test.",
+            };
 
            emailjs
              .send("service_esmgsr2", "template_g0hglkz", emailParams)
